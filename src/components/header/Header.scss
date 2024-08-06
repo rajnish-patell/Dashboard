@@ -1,0 +1,20 @@
+.headerDrawer {
+    .MuiPaper-root {
+        padding: 0 8px;
+    }
+
+    ul {
+        li {
+            .MuiButtonBase-root:hover {
+                border-radius: 8px;
+            }
+        }
+    }
+}
+
+
+@media only screen and (max-width: 899px) {
+    main .headerWrapper  .drawerIcon {
+         padding: 5px;
+     }
+ }

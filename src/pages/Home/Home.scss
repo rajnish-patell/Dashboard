@@ -1,0 +1,106 @@
+.dashboardLayout {
+    padding: 30px 0;
+    width: calc(100% - 64px);
+    margin-left: auto;
+    margin-top: 64px;
+
+    .dashboardItem {
+        flex: 0 25%;
+        justify-content: space-between;
+        display: flex;
+        flex-direction: column;
+
+        .dataIcon {
+            display: inline-flex;
+            width: 40px;
+            height: 40px;
+            align-items: center;
+            justify-content: center;
+            border-radius: 4px;
+            margin-bottom: 10px;
+        }
+
+        .dataTitle {
+            margin-bottom: 15px;
+            p{
+                font-weight: 600;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1199px) {
+    .dashboardGrid {
+        flex-wrap: wrap;
+        gap: 0 !important;
+    }
+
+    .dashboardCol {
+        flex: unset;
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 899px) {
+    .dashboardLayout {
+        padding: 20px 0 !important;
+    }
+
+    body h3 {
+        font-size: 28px !important;
+    }
+
+    .pageTitle {
+        margin-bottom: 15px !important;
+    }
+
+    body h5 {
+        font-size: 18px !important;
+    }
+    .headerDrawer .drawerIcon {
+        padding: 5px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .dashboradData {
+        flex-wrap: wrap;
+    }
+
+    .dashboardLayout .dashboardItem {
+        flex: 0 calc(50% - 5px);
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .dashboardLayout {
+        padding: 30px 0;
+        width: calc(100% - 56px);
+        margin-top: 50px;
+    }
+    body h3 {
+        font-size: 24px !important;
+    }
+
+}
+
+@media only screen and (max-width: 480px) {
+    .dashboardLayout .dashboardItem {
+        flex: 0 100%;
+    }
+    .headerDrawer .MuiPaper-root {
+        padding: 0;
+    }
+    .dashboardLayout {
+        width: 100%;
+        margin: 50px 0 0 0;
+    }
+    header.MuiPaper-root {
+        width: 100%;
+    }
+    .dashboradData {
+            width: calc(100% - 30px);
+    margin: 0 auto;
+    } 
+}
+
